@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="microservicecloud" target="1.8" />
+      <module name="microservicecloudapi" target="1.8" />
+      <module name="microservicecloudproviderdept8001" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
