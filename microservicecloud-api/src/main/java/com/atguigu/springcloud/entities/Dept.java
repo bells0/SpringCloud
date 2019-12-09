@@ -14,6 +14,7 @@ public class Dept {
         super();
         this.dname = dname;
 
+
     }
 
 }
