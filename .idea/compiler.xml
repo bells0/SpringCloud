@@ -7,8 +7,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="microservicecloudapi" />
         <module name="microservicecloudproviderdept8001" />
+        <module name="microservicecloudconsumerdept80" />
+        <module name="microservicecloudapi" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
