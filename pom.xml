@@ -12,6 +12,9 @@
         <module>microservicecloud-api</module>
         <module>microservicecloud-provider-dept-8001</module>
         <module>microservicecloud-consumer-dept-80</module>
+        <module>microservicecloud-eureka-7001</module>
+        <module>microservicecloud-eureka-7002</module>
+        <module>microservicecloud-eureka-7003</module>
     </modules>
 
     <properties>
@@ -31,6 +34,7 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+<!--            spring boot依赖，注意这里跟单体spring boot应用有区别-->
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>

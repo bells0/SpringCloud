@@ -6,6 +6,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 import com.atguigu.springcloud.entities.Dept;
+
+import javax.annotation.Resource;
 import java.util.List;
 
 @RestController
@@ -34,5 +36,11 @@ private RestTemplate restTemplate;
         return restTemplate.getForObject(REST_URL_PREFIX + "/dept/list", List.class);
     }
 
+    // 测试@EnableDiscoveryClient,消费端可以调用服务发现
+    @RequestMapping(value = "/consumer/dept/discovery")
+    public Object discovery()
+    {
+        return restTemplate.getForObject(REST_URL_PREFIX + "/dept/discovery", Object.class);
+    }
 
 }
